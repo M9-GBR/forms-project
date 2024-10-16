@@ -1,0 +1,233 @@
+:root {
+    --aqua: rgb(127, 255, 212);
+    --dark-aqua: rgb(107, 235, 192);
+    --v-dark-aqua: rgb(87, 215, 172);
+    --v2-dark-aqua: rgb(67, 195, 152)
+}
+
+body {
+    background: url(../imgs/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#blue-felt {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(173, 216, 230, 0.5);
+    z-index: -1;
+}
+
+#navbar {
+    background-color: var(--aqua);
+    justify-content: space-between;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.navbar-hide {
+    transform: translateY(-100%);
+}
+
+.navbar-show {
+    transform: translateY(0);
+}
+
+#logo-div a, #foot-stop a {
+    display: flex;
+    text-decoration: none;
+}
+
+#logo-div p, #foot-stop p{
+    margin: auto 0;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: calibri, helvetica, arial;
+}
+
+.logo-img {
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 385px) {
+    #logo-div {
+        margin: auto;
+    }
+
+    #navbar .navbar-toggler {
+        margin: auto;
+    }
+}
+
+#cNav {
+    max-width: fit-content;
+}
+
+li.nav-item {
+    border-radius: 5px;
+    font-weight: bold;
+    margin: auto 0;
+    text-align: center;
+}
+
+li.nav-item:not(li.nav-item:last-of-type) {
+    margin-right: 5px;
+}
+
+.nav-btn {
+    background-color: var(--dark-aqua);
+}
+
+.nav-btn:hover {
+    background-color: var(--v-dark-aqua);
+}
+
+@media screen and (max-width: 576px) {
+    #cNav {
+        max-width: none;
+    }
+
+    li.nav-item {
+        margin: 3px 3px;
+        background-color: var(--dark-aqua);
+        padding: 0 5px;
+    }
+
+    li.nav-item:hover {
+        background-color: var(--v-dark-aqua);
+    }
+
+    form {
+        width: 90vw;
+    }
+}
+
+#navbar .navbar-toggler {
+    background-color: var(--dark-aqua);
+}
+
+#navbar .navbar-toggler:hover {
+    background-color: var(--v-dark-aqua);
+}
+
+#reason-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+#r-b {
+    text-wrap: nowrap;
+}
+
+form {
+    width: 50vw;
+    min-width: 500px;
+    margin: auto;
+    background-color: var(--v-dark-aqua);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90vw;
+        min-width: 0px;
+    }
+}
+
+form hr {
+    border-width: 2px;
+}
+
+select::-webkit-scrollbar {
+    width: 10px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+select::-webkit-scrollbar-track {
+    background-color: var(--dark-aqua);
+}
+
+select#gender {
+    width: 50%;
+    margin: auto;
+}
+
+#gender-warn {
+    text-align: center;
+}
+
+option {
+    background-color: var(--dark-aqua);
+}
+
+.form-check {
+    text-align: start;
+}
+
+.warn {
+    color: red;
+    text-align: start;
+    display: none;
+}
+
+#check-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#check-wrap div a {
+    text-wrap: nowrap;
+}
+
+#submit {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: var(--aqua);
+}
+
+#submit:hover {
+    background-color: var(--dark-aqua);
+}
+
+#submit:active {
+    background-color: var(--v2-dark-aqua);
+}
+
+#footer {
+    background-color: var(--aqua);
+}
+
+#foot-links ul {
+    list-style-position: outside;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#foot-links ul li {
+    margin: 0 10px;
+}
+
+#foot-links a {
+    color: black;
+}
+
+#foot-stop a {
+    justify-content: center;
+}
+
+#foot-stop {
+    text-align: center;
+}
