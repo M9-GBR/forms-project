@@ -2,7 +2,10 @@
     --aqua: rgb(127, 255, 212);
     --dark-aqua: rgb(107, 235, 192);
     --v-dark-aqua: rgb(87, 215, 172);
-    --v2-dark-aqua: rgb(67, 195, 152)
+    --v2-dark-aqua: rgb(67, 195, 152);
+    --v3-dark-aqua: rgb(47, 175, 132);
+    --v4-dark-aqua: rgb(27, 155, 112);
+    --v5-dark-aqua: rgb(7, 135, 92);
 }
 
 body {
@@ -20,6 +23,12 @@ body {
     z-index: -1;
 }
 
+#cont {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 #navbar {
     background-color: var(--aqua);
     justify-content: space-between;
@@ -35,12 +44,14 @@ body {
     transform: translateY(0);
 }
 
-#logo-div a, #foot-stop a {
+#logo-div a,
+#foot-stop a {
     display: flex;
     text-decoration: none;
 }
 
-#logo-div p, #foot-stop p{
+#logo-div p,
+#foot-stop p {
     margin: auto 0;
     color: black;
     font-size: 30px;
@@ -208,12 +219,25 @@ option {
 
 #footer {
     background-color: var(--aqua);
+    margin-top: auto;
 }
+
+#links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#foot-links {
+    margin: auto 0;
+} 
 
 #foot-links ul {
     list-style-position: outside;
     list-style-type: none;
     justify-content: center;
+    margin: auto 0;
 }
 
 #foot-links ul li {
@@ -224,10 +248,25 @@ option {
     color: black;
 }
 
+#social-links {
+    margin: 10px;
+}
+
+#social-links svg{
+    width: 40px;
+    margin-left: 10px;
+    fill: var(--v4-dark-aqua);
+}
+
+#social-links svg:hover {
+    fill: var(--v5-dark-aqua);
+}
+
 #foot-stop a {
     justify-content: center;
 }
 
 #foot-stop {
     text-align: center;
+    margin: 10px;
 }

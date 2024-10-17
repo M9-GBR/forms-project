@@ -2,7 +2,7 @@
     let a = await fetch('./public/countries.json')
     let json = await a.json()
 
-    let select = document.querySelector('#country')
+    let select = document.getElementById('country')
 
     for (const countries of json) {
         let opt = new Option(countries.name, countries.iso2)
